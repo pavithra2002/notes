@@ -1,0 +1,63 @@
+////declaration of string////
+String s=new String("pavi");
+system.out.println(s.getclass());
+//s="oops class";
+//or using character array
+char c[]={'w','e','l','c','o','m','e'};
+String s1=new String(c);
+system.out.println(s1);
+//or using character array with range
+String s2=new String(c,1,3);//second and third parameter(ie)index//op:elc
+system.out.println(s2);
+//or using byte array
+byte b[]={65,66,67,83,85};
+String s3=new String(b);
+system.out.println(s3);//op:ABCSU
+//or using byte array with range
+String s4=new String(b,0,2);
+system.out.println(s4);//op:AB
+//string object
+String s5=new String(s);
+system.out.println(s5);//op:pavi
+////string concadination////
+String s="wel";
+String s1="come";
+system.out.println(s+s1+40+50);//op:welcome4050
+//if we want the sum of the string put bracket(40+50=90)
+//length of the string//
+system.out.println(s.length());//op:3
+//character extraction methods//
+system.out.println(s.charAt(2));//op:l
+//reverse the string//
+String str=""
+for(int i=s.length()-1;i>=0;i--);
+{
+str=str+s.chsrAt(i);
+}
+system.out.println(str);//op:lew
+//////getchar method////////
+String s1=" oops class"
+char c[]=new char[10];
+s1.getchars(1,7,c,0);
+system.out.println(c);//op:oops c
+//or//
+for(int i=0;i<6;i++)
+system.out.println(c[i]);
+//get bytes
+byte b[]=new byte[10];
+b=s1.getbytes();
+system.out.println(b);op:@jkhjh(//some aski values//)
+for(int i=0;i<b.length;i++)
+system.out.println((char)b[i]);//op:oops
+char c1[]=new char[20];
+c1=s1.tocharArray();
+for(int i=0;i<c1.length;i++)
+system.out.println(c1[i]);
+
+
+
+
+
+
+
+
