@@ -1,0 +1,80 @@
+/*
+8/9/20
+OOPS
+*/
+/*string comparison*/
+/*eg:*/
+String s="oops";
+String s1="oops";
+/*equals method*/
+if(s.equals(s1))
+System.out.println("equal");
+else/*case sensitive*/
+System.out.println("not equal");
+/*o/p:equal*/
+String s="oops";
+String s1="OOps";
+/*equalsIgnoreCase method*/
+if(s.equalsIgnoreCase(s1))
+System.out.println("equal");
+else/*just see the content*/
+System.out.println("not equal");
+/*o/p:equal*/
+/*regionmatches method*/
+System.out.println("oops class".regionMatches(0,s,0,2));
+/*first:soure index,next which string want to check,next two parameters(want to check from index to index in the "s")
+*/
+/*o/p:true*/
+System.out.println("oops class".regionMatches(true,0,s,0,2));/*no case sensitive*/
+System.out.println("oops class".regionMatches(false,0,s,0,2));/*case sensitive*/
+/*startswith method*/
+System.out.println(s.startswith("oo"));
+/*o/p:true*/
+String p="oops jjj";
+System.out.println(p.startswith("j",5));/*true*/
+/*endswith*/
+System.out.println(p.endswith("jjj"));
+//compareTo method-->return type will be integer-->+ve or -ve
+String s2="abc";//str1
+String s2="def";//str2
+if(s2.compareTo(s3)>0)
+System.out.println("str1>str2");
+else
+System.out.println("str2>str1");
+//o/p:str2>str1
+if(s3.compareTo(s2)>0)
+System.out.println("str1>str2");
+else
+System.out.println("str2>str1");
+//o/p:str1>str2
+//searching the string
+System.out.println("welcome to oops class".indexof("class"));//16
+System.out.println("welcome to oops class".indexof("t"));//8
+System.out.println("welcome to oops class".indexof('s',16));
+//lastindexof method
+System.out.println("welcome to oops class to".lastIndexof("to"));//22
+System.out.println("welcome to oops class".lastIndexof("t"));//8
+//substring
+System.out.println("welcome to oops class".substring(11));//oops class
+System.out.println("welcome to oops class".substring(11,14));//oop
+//replace
+System.out.println("welcome to oops class".replace('o','r');//welcrme tr rrps class
+//trim
+String str="        \n\twelcome to oops class"
+System.out.println(str.trim());//welcome to oops class
+//toLowercase toUpperCase
+System.out.println("welcome to oops class".toUpperCase());
+String strr[]=str.split(":");
+for(String i:str1)
+System.out.println(i);
+
+
+
+
+
+
+
+
+
+
+
